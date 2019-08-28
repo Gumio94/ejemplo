@@ -3,7 +3,7 @@ require_once 'Usuario.php';
 
 class Profesor extends Usuario{
     public $pedido;
-    private $edad;
+    private $eda;
 
     public function __construct() {
         $this->nombre = "pep";
