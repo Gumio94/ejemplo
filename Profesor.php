@@ -17,9 +17,8 @@ class Profesor extends Usuario{
         $this->pedido = [];
     }
     
-    /*metodo para poner la edad al profesor
-     * parametro:
-     * $fecha: fecha de nacimiento (formato: YYYY-mm-dd)
+    /** metodo para poner la edad al profesor
+     * @param string $fecha fecha de nacimiento (formato: YYYY-mm-dd)
      */
     public function setEdad($fecha){
         //crea un objeto de la clase DataTime y le pone la fecha del usuario
