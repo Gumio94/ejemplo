@@ -18,7 +18,7 @@ class Profesor extends Usuario{
     }
     
     /** metodo para poner la edad al profesor
-     * @param string $fecha fecha de nacimiento (formato: YYYY-mm-dd)
+     * @param string $fecha la fecha de nacimiento del usuario (formato: YYYY-mm-dd)
      */
     public function setEdad($fecha){
         //crea un objeto de la clase DataTime y le pone la fecha del usuario
@@ -33,14 +33,15 @@ class Profesor extends Usuario{
         $this->edad = $anios->y;
     }
     
-    //metodo para devolver la edad
+    /** Metodo para devolver la edad
+     * @return int edad
+     */
     public function getEdad(){
         return $this->edad;
     }
     
-    /*Metodo para ingresar un pedido al profesor
-     * parametro:
-     * $pedido: objeto de la clase Pedido
+    /** Metodo para ingresar un pedido al profesor
+     * @param Pedido $pedido el pedido a ingresar
      */
     public function ingresarPedido($pedido){
         //inserta ese objeto en la siguiente posicion disponible
